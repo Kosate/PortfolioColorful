@@ -71,9 +71,8 @@ gulp.task('watch', function() {
         '!app/**/*.tmp',
         '!app/img/**/*'
     ], ['move']);
-    gulp.watch('app/img/**/*', ['imageMin']);
 
-    gulp.watch(['dist/**/*', '!dist/bower_components/**/*']).on('change', browserSync.reload);
+    gulp.watch(['dist/**/*','!dist/img/**/*', '!dist/bower_components/**/*']).on('change', browserSync.reload);
 });
 
 gulp.task('clean', function() {

@@ -1,9 +1,31 @@
+$header-color: #333;
+$dark-header-color: #222;
+
 body {
     font-family: 'Roboto', Lato,'Helvetica Neue',Arial,Helvetica,sans-serif !important;
     background: #fdfdfd;
+    color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 { color: $header-color;}
+
+.mini-space {
+    padding: 10px 0;
+    
+    @media screen and (max-width: 768px) {
+        padding: 5px 0;
+    }
+}
+.space {
+    padding: 20px 0;
+    
+    @media screen and (max-width: 768px) {
+        padding: 15px 0;
+    }
 }
 
 .section {
+    
     &.section-first {
         height: 100%;
         max-height: 700px;
@@ -18,15 +40,53 @@ body {
             .name { font-size: 2.5em; }
             .description { font-size: 1.1em; }
         }
+        
+        @media screen and (max-width: 320px) {
+            .name { font-size: 2.2em; }
+        }
     }
+    
+    &.lead-section {
+        background: #fab82a;
+        height: 100%;
+        max-height: 250px;
+        color: $dark-header-color;
+        
+        .header {
+            font-size: 3em; line-height: 1.5em;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .header { font-size: 2.5em; }
+        }
+    }
+    
+    &.head-section {
+        background: #db8120;
+        height: 100%;
+        max-height: 180px;
+        font-size: 1.1em;
+        color: $dark-header-color;
+        
+        .header {
+            font-size: 1.6em; line-height: 1.5em;
+        }
+        
+        @media screen and (max-width: 768px) {
+            font-size: 1em;
+        }
+    }
+    
+    &.detail-section {
+        .header { color: $header-color; }
+    }
+    
     & > .grid {
         height: 100%;
     }
 }
 
-.detail-section {
-    padding: 40px 0;
-}
+
 
 .skills {
     .description {
@@ -36,7 +96,33 @@ body {
     }
     .icon-list {
         text-align:center;
-        img { max-width:60px; max-height:60px; margin:auto; }
+        img { max-width:50px; max-height:50px; margin:auto; }
         .label { margin-top:7px; }
+    }
+}
+
+.content-box {
+    .header { 
+        font-size: 1.3em;
+        color: $dark-header-color; 
+    }
+    
+    .meta {
+        font-style: italic;
+        font-size: 0.9em;
+        color: #666;
+    }
+    
+    .content {
+        margin-top: 15px;
+    }
+    
+    .external-link i {
+        color: #777;
+        transition: all 0.5s;
+        
+        &:hover {
+            color: #222;
+        }
     }
 }

@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 { color: $header-color;}
     &.lead-section {
         background: #fab82a;
         height: 100%;
-        max-height: 250px;
+        max-height: 180px;
         color: $dark-header-color;
         
         .header {
@@ -103,6 +103,8 @@ h1, h2, h3, h4, h5, h6 { color: $header-color;}
 }
 
 .content-box {
+    margin-bottom: 5px;
+  
     .header { 
         font-size: 1.3em;
         color: $dark-header-color; 

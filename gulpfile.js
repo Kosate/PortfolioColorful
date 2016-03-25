@@ -55,7 +55,8 @@ gulp.task('static', function() {
 gulp.task('watch', function() {
 
     browserSync.init({
-        server: "dist/"
+        server: "dist/",
+        port: 3002
     });
 
     gulp.run(['default']);

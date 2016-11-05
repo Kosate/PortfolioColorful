@@ -1,8 +1,9 @@
 $(() => {
-   $('img')
+
+  $('img')
     .visibility({
-        type       : 'image',
-        transition : 'fade in',
-        duration   : 1000
+      type: 'image',
+      transition: 'fade in',
+      duration: 1000
     });
 });

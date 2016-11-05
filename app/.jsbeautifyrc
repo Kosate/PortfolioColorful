@@ -1,0 +1,14 @@
+{
+  "css": {
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "js": {
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "html": {
+    "indent_char": " ",
+    "indent_size": 2
+  }
+}

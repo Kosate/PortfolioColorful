@@ -18,6 +18,11 @@ body {
   color: #111;
 }
 
+.ui.header {
+  font-family: $default-font;
+  font-weight: 300;
+}
+
 h1,
 h2,
 h3,
@@ -59,6 +64,7 @@ h6 {
     @media screen and (max-width: 768px) {
       .name {
         font-size: 3em;
+        line-height: 1.2em;
       }
 
       .description {

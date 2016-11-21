@@ -11,6 +11,14 @@ $default-font: 'Roboto', 'Lato', 'Helvetica Neue', Arial, Helvetica, 'Tahamo', s
 
 .desc-font-size { font-size: 0.8em; }
 
+.image {
+  border: 1px solid #d8d8d8;
+}
+
+a {
+  color: inherit;
+}
+
 body {
   font-family: $default-font;
   background: #f8f8f8;
